@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <span id="output-text"></span>
+      </div>
+
+      <div class="buttons">
+        <!-- Top row of buttons -->
+        <button class="function" id="sin" onclick="trig('sin')">sin</button>
+        <button class="function" id="cos" onclick="trig('cos')">cos</button>
+        <button class="function" id="tan" onclick="trig('tan')">tan</button>
+        <button class="function" id="sqrt" onclick="operate('sqrt')">√</button>
+
+        <!-- Second row of buttons -->
+        <button class="number" id="7" onclick="addDigit('7')">7</button>
+        <button class="number" id="8" onclick="addDigit('8')">8</button>
+        <button class="number" id="9" onclick="addDigit('9')">9</button>
+        <button class="operator" id="divide" onclick="operate('/')">÷</button>
+
+        <!-- Third row of buttons -->
+        <button class="number" id="4" onclick="addDigit('4')">4</button>
+        <button class="number" id="5" onclick="addDigit('5')">5</button>
+        <button class="number" id="6" onclick="addDigit('6')">6</button>
+        <button class="operator" id="multiply" onclick="operate('*')">x</button>
+
+        <!-- Fourth row of buttons -->
+        <button class="number" id="1" onclick="addDigit('1')">1</button>
+        <button class="number" id="2" onclick="addDigit('2')">2</button>
+        <button class="number" id="3" onclick="addDigit('3')">3</button>
+        <button class="operator" id="subtract" onclick="operate('-')">-</button>
+
+        <!-- Fifth row of buttons -->
+        <button class="number" id="0" onclick="addDigit('0')">0</button>
+        <button class="number" id="decimal" onclick="addDecimal()">.</button>
+        <button class="operator" id="equals" onclick="calculate()">=</button>
+        <button class="operator" id="add" onclick="operate('+')">+</button>
+      </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="calc.js"></script>
+
+    <!-- Animation?? -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+  </body>
+</html>
